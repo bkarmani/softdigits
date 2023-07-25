@@ -24,8 +24,10 @@ def create_app(config_name):
 
     #blueprpints
     from .main import main as main_blueprint
+    from .products import product as prod_blueprint
 
     app.register_blueprint(main_blueprint)
+    app.register_blueprint(prod_blueprint, url_prefix='/products')
 
     return app
 
