@@ -1,14 +1,11 @@
-from flask import Flask, render_template
+import os
+from app import create_app
+from flask_migrate import Migrate
 
-app = Flask(__name__)
 
+app = create_app(os.getenv('FLASK_CONFIG') or 'default')
+migrate = Migrate(app)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
 
 
 
