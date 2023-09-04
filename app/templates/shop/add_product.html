@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        {{form.hidden_tag()}}
+        {{form.product_name.label}}<br>
+        {{form.product_name}}<br>
+        {{form.description.label}}<br>
+        {{form.description}}<br>
+        {{form.price.label}}<br>
+        {{form.price}}<br>
+        {{form.old_price.label}}<br>
+        {{form.old_price}}<br>
+        {{form.image1.label}}<br>
+        {{form.image1}}<br>
+        {{form.image2.label}}<br>
+        {{form.image2}}<br>
+        {{form.image3.label}}<br>
+        {{form.image3}}<br>
+        {{form.image4.label}}<br>
+        {{form.image4}}<br>
+        {{form.category.label}}<br>
+        {{form.category}}<br>
+        {{form.submit}}
+    </form>
+</body>
+</html>

@@ -1587,7 +1587,9 @@ html.ie.gecko body.modal-open {
 #tt-footer {
     background-color: var(--default_color02);
     color: #bbbdc3;
-    margin-top: 162px
+    margin-top: 200px;
+    width: 100%;
+  
 }
 
 form {
@@ -1740,8 +1742,9 @@ form {
 }
 
 .f-nav li:before {
-    content: "\e922";
+    content: "\2713";
     font-family: var(--default_font_icon);
+    font-weight: bold;
     color: var(--default_color);
     position: absolute;
     top: 8px;

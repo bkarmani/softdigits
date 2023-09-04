@@ -23,6 +23,7 @@
  !!!@import "../external/bootstrap/scss/bootstrap.scss";
  */
 
+
 *,
 ::after,
 ::before {
@@ -34,7 +35,7 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    -ms-overflow-style: scrollbar;
+    -ms-overflow-style: auto;
     -webkit-tap-highlight-color: transparent
 }
 
@@ -1669,6 +1670,7 @@ fieldset:disabled a.btn {
     -moz-osx-font-smoothing: grayscale
 }
 
+
 .icon-arrow_left:before {
     content: "\e92d"
 }
@@ -1678,15 +1680,22 @@ fieldset:disabled a.btn {
 }
 
 .icon-search:before {
-    content: "\e92f"
+    content: "\f002";
+    font-family:'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-icon-filter:before {
-    content: "\e930"
+    content: "\f0b0";
+    font-family:'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-lightning:before {
-    content: "\e900"
+    font-family: 'Font Awesome 6 free';
+    content: "\f0e7";
+    font-weight:900;
+    
 }
 
 .icon-linkedin-logo-button:before {
@@ -1694,7 +1703,9 @@ fieldset:disabled a.btn {
 }
 
 .icon-map-marker:before {
-    content: "\e902"
+    content: "\f3c5";
+    font-family:'Font Awesome 6 free';
+    font-weight:900;
 }
 
 .icon-people:before {
@@ -1702,15 +1713,21 @@ fieldset:disabled a.btn {
 }
 
 .icon-plug-1:before {
-    content: "\e904"
+    content: "\f015";
+    font-family:'Font Awesome 6 free';
+    font-weight:900;
 }
 
 .icon-price-tag:before {
-    content: "\e905"
+    content: "\f02c";
+    font-family:'Font Awesome 6 free';
+    font-weight:900;
 }
 
 .icon-printer:before {
-    content: "\e906"
+    content: "\f02f";
+    font-family:'Font Awesome 6 free';
+    font-weight:900;
 }
 
 .icon-right-quote-sign:before {
@@ -1718,11 +1735,11 @@ fieldset:disabled a.btn {
 }
 
 .icon-rubbish-bin-delete-button:before {
-    content: "\e908"
+    content: "\1F5D1"
 }
 
 .icon-screwdriver-and-wrench-crossed:before {
-    content: "\e909"
+    content: "\1F6E0"
 }
 
 .icon-security-camera:before {
@@ -1746,7 +1763,9 @@ fieldset:disabled a.btn {
 }
 
 .icon-telephone:before {
-    content: "\e90f"
+    content: "\f095";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-tool:before {
@@ -1754,7 +1773,9 @@ fieldset:disabled a.btn {
 }
 
 .icon-tool2:before {
-    content: "\e911"
+    content: "\f1ec";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-transport:before {
@@ -1766,39 +1787,58 @@ fieldset:disabled a.btn {
 }
 
 .icon-twitter-logo-button:before {
-    content: "\e914"
+    content: "\e61a";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 400;
 }
 
 .icon-hours:before {
-    content: "\e915"
+    content: "\f1da";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-482948:before {
-    content: "\e916"
+    content: "\f0e0";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-545705:before {
-    content: "\e917"
+    content: "\f0c9";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-621023:before {
-    content: "\e918"
+    content: "\f275";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-747993:before {
-    content: "\e919"
+    content: "\f073";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
+
 }
 
 .icon-808584:before {
-    content: "\e91a"
+    content: "\f07a";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-860796:before {
-    content: "\e91b"
+    content: "\f00d";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-867257:before {
-    content: "\e91c"
+    content: "\f788";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-1384031:before {
@@ -1806,11 +1846,15 @@ fieldset:disabled a.btn {
 }
 
 .icon-1716894:before {
-    content: "\e91e"
+    content: "\f82c";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-1895474:before {
-    content: "\e91f"
+    content: "\f5f3";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 900;
 }
 
 .icon-air-conditioner:before {
@@ -1818,7 +1862,7 @@ fieldset:disabled a.btn {
 }
 
 .icon-arrowhead-pointing-to-the-right-1:before {
-    content: "\e921"
+    content: "\25B6";
 }
 
 .icon-check:before {
@@ -1830,7 +1874,9 @@ fieldset:disabled a.btn {
 }
 
 .icon-clock-circular-outline-1:before {
-    content: "\e924"
+    content: "\f017";
+    font-family: 'Font Awesome 6 free';
+    font-size: 900;
 }
 
 .icon-computer:before {
@@ -1838,11 +1884,15 @@ fieldset:disabled a.btn {
 }
 
 .icon-facebook-logo-button:before {
-    content: "\e926"
+    content: "\f09a";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 100;
 }
 
 .icon-favorite:before {
-    content: "\e927"
+    content: "\f005";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 100;
 }
 
 .icon-google-plus-logo-button:before {
@@ -1850,7 +1900,9 @@ fieldset:disabled a.btn {
 }
 
 .icon-instagram-logo:before {
-    content: "\e929"
+    content: "\f16d";
+    font-family: 'Font Awesome 6 free';
+    font-weight: 400;
 }
 
 .icon-interface:before {
@@ -1866,7 +1918,9 @@ fieldset:disabled a.btn {
 }
 
 .icon-2919521:before {
-    content: "\e931"
+    font-family: 'Font Awesome 6 free';
+    content: "\f0c1";
+    font-weight:900;
 }
 
 .icon-icon-search02:before {
@@ -1874,7 +1928,9 @@ fieldset:disabled a.btn {
 }
 
 .icon-eye:before {
-    content: "\e9ce"
+    font-family: 'Font Awesome 6 free';
+    content: "\f06e";
+    font-weight:900;
 }
 
 body {
@@ -2208,14 +2264,19 @@ button:focus {
     margin-top: 25px
 }
 
+/* .tt-list01 {
+    list-style-type:none;
+} */
+
 .tt-list01 li {
     color: var(--default_color02);
     padding: 0 0 0 27px;
     position: relative
 }
 
+
 .tt-list01 li:before {
-    content: "\e922";
+    content: "\2713" !important;
     font-family: var(--default_font_icon);
     color: var(--default_color);
     position: absolute;
@@ -2332,7 +2393,8 @@ button:focus {
 }
 
 .blockquote02:before {
-    content: "\e900";
+    /* font-family: "Font Awesome 6 Free"; */
+    /* content:'\e265'; */
     font-family: var(--default_font_icon);
     width: 52px;
     height: 52px;
@@ -2998,7 +3060,7 @@ html.ie:not(.edge) .checkbox-group label .check {
 }
 
 .panel-menu li.mm-close-parent .mm-close:before {
-    content: "\e91b";
+    content: "\2716";
     padding-right: 10px;
     position: relative;
     top: 1px;
@@ -3023,7 +3085,7 @@ html.ie:not(.edge) .checkbox-group label .check {
 }
 
 .panel-menu .mm-prev-level:before {
-    content: "\e92d";
+    content: "\276E";
     padding-right: 10px;
     position: relative;
     top: 1px;
@@ -3046,7 +3108,7 @@ html.ie:not(.edge) .checkbox-group label .check {
 }
 
 .panel-menu .mm-next-level:after {
-    content: "\e92e";
+    content: "\276F";
     padding-left: 10px;
     top: 12px;
     right: 30px;
@@ -3290,7 +3352,7 @@ html.ie:not(.edge) .checkbox-group label .check {
 .tt-cart-list .tt-item__remove:hover {
     color: var(--default_color)
 }
-
+back
 .tt-cart-list .tt-item__img {
     width: 88px;
     min-width: 88px;
@@ -4332,7 +4394,7 @@ html.ie:not(.edge) .checkbox-group label .check {
 
 .tt-box02 .tt-box02__img img.tt-img-mask {
     position: absolute;
-    z-index: 2;
+    z-index:2;
     max-width: 142px;
     top: 0;
     left: 50%;
@@ -4461,13 +4523,13 @@ html.ie:not(.edge) .checkbox-group label .check {
 }
 
 .tt-box03 .item .tt-item__img:before {
-    content: "\e92b";
+    content: "\201C";
     font-family: var(--default_font_icon);
     display: block;
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 59px;
+    font-size: 80px;
     color: var(--default_color)
 }
 
@@ -4935,8 +4997,9 @@ html.ie:not(.edge) .checkbox-group label .check {
 }
 
 .tt-layout02 .tt-layout02__list li:before {
-    content: "\e922";
+    content: "\2713";
     font-family: var(--default_font_icon);
+    font-weight: bolder;
     color: var(--default_color);
     position: absolute;
     top: 9px;
@@ -5382,7 +5445,7 @@ html.ie:not(.edge) .checkbox-group label .check {
 }
 
 .nav-categories li a:before {
-    content: "\e921";
+    content: "\25B6";
     font-family: var(--default_font_icon);
     display: block;
     position: absolute;
@@ -5932,7 +5995,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .tt-gallery .gallery__icon:before {
-    content: "\e9ce";
+    content: "\1F441";
     display: block;
     font-family: var(--default_font_icon);
     color: #fff;

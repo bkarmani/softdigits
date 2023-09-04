@@ -6998,7 +6998,7 @@ $("body").append(getFullscreenBg()), $.fn.initMM = function() {
         $("body").on("click touchstart", ".js-dropdown-cart .tt-obj__btn", (function(e) {
             if (e.preventDefault(), $(this).closest(".js-dropdown-cart").hasClass("active")) return closeDropdown(), !1;
             $.ajax({
-                url: "ajax-content/cart-dropdown.php",
+                url: "../../static/ajax-content/cart-dropdown.php",
                 success: function(data) {
                     var $item = $(data);
                     $(".js-dropdown-cart .tt-obj__dropdown").append($item)

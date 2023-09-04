@@ -7,14 +7,16 @@
     <meta name="keywords" content="HTML5 Template">
     <meta name="description" content="Electron - Responsive HTML5 Template">
     <meta name="author" content="Electron">
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="../../static/images/favicon.png">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/style.css">
-
+    <link rel="stylesheet" href="../static/css/alert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://widget.tochat.be/bundle.js?key=c2e68c25-c569-4e4e-bb08-c02af0c00491"></script>
 </head>
 
 <body>
@@ -60,11 +62,56 @@
                     <div class="col-auto ml-auto">
                         <div class="tt-obj">
                             <div class="h-info02">
-                                <div class="tt-item"><address><a href="tel:1(800)7654321"><span class="icon-telephone"></span>1 (800) 765-43-21</a></address></div>
+                                <div class="tt-item"><address><a href="tel:1(800)7654321"><i class="icon-telephone"></i>1 (800) 765-43-21</a></address></div>
                             </div>
-                        </div>
-                        <div class="tt-obj tt-obj-cart js-dropdown-cart"><a href="#" class="tt-obj__btn"><i class="icon-808584"></i><div class="tt-obj__badge">2</div></a>
-                            <div class="tt-obj__dropdown"></div>
+                        <!-- </div>
+                             <div class="tt-obj tt-obj-cart js-dropdown-cart active"><a href="#" class="tt-obj__btn"><i class="icon-808584"></i><div class="tt-obj__badge">2</div></a>
+                        <div class="tt-obj__dropdown">
+                            <div class="tt-obj__dropdown-close icon-860796"></div>
+                            <div class="tt-obj__title">Shopping Cart</div>
+                            <div class="tt-cart-list">
+                                <div class="tt-item">
+                                    <a class="tt-item__remove icon-rubbish-bin-delete-button" href="#"></a>
+                                    <div class="tt-item__img">
+                                        <img src="../static/images/product-01.jpg" alt="">
+                                    </div>
+                                    <div class="tt-item__content">
+                                        <div class="tt-item__title">
+                                            <a href="#">
+                                                Woods WiOn 15 amps Receptacle and USB Charger
+                                            </a>
+                                        </div>
+                                        <div class="tt-item__price">
+                                        $41.99
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tt-item">
+                                    <a class="tt-item__remove icon-rubbish-bin-delete-button" href="#"></a>
+                                    <div class="tt-item__img">
+                                        <img src="../static/images/product-02.jpg" alt="">
+                                    </div>
+                                    <div class="tt-item__content">
+                                        <div class="tt-item__title">
+                                            <a href="#">
+                                                Powerboss 3500 watts Gasoline Portable Generator
+                                            </a>
+                                        </div>
+                                        <div class="tt-item__price">
+                                            <span class="new-price">$329.99</span> 
+                                            <span class="old-price">$342.32</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tt-cart-total">
+                                <div class="row tt-row">
+                                    <div class="col-auto">Total:</div>
+                                    <div class="col-auto">$371.98</div>
+                                </div>
+                                <a class="tt-btn btn__color01" href="#">Proceed to Checkout</a>
+                            </div>
+                        </div>  -->
                         </div>
                     </div>
                 </div>
@@ -77,7 +124,7 @@
                 <div class="container container-lg-fluid">
                     <div class="tt-holder">
                         <div class="tt-col-logo">
-                            <!-- logo --><a href="index.html" class="tt-logo tt-logo-alignment"><span class="tt-icon"><img src="../static/images/logo.png" alt=""></span>Electron</a>
+                            <!-- logo --><a href="{{url_for('main.index')}}" class="tt-logo tt-logo-alignment"><span class="tt-icon"><img src="../static/images/logo.png" alt=""></span>Electron</a>
                             <!-- /logo -->
                         </div>
                         <div class="tt-col-objects tt-col-wide text-center">
@@ -112,7 +159,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="services.html">
+                                        <a href="{{url_for('main.services')}}">
                                             <div class="electric-btn"><span class="text">Services</span>
                                                 <div class="mask"><span>Services</span></div>
                                                 <div class="mask"><span>Services</span></div>
@@ -148,7 +195,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="prices.html">
+                                        <a href="{{url_for('main.prices')}}">
                                             <div class="electric-btn"><span class="text">Prices</span>
                                                 <div class="mask"><span>Prices</span></div>
                                                 <div class="mask"><span>Prices</span></div>
@@ -160,7 +207,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="gallery.html">
+                                        <a href="{{url_for('main.gallery')}}">
                                             <div class="electric-btn"><span class="text">Gallery</span>
                                                 <div class="mask"><span>Gallery</span></div>
                                                 <div class="mask"><span>Gallery</span></div>
@@ -172,7 +219,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="blog.html">
+                                        <a href="{{url_for('main.blog')}}">
                                             <div class="electric-btn"><span class="text">Blog</span>
                                                 <div class="mask"><span>Blog</span></div>
                                                 <div class="mask"><span>Blog</span></div>
@@ -187,7 +234,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="shop.html">
+                                        <a href="{{url_for('shop.page1')}}">
                                             <div class="electric-btn"><span class="text">Shop</span>
                                                 <div class="mask"><span>Shop</span></div>
                                                 <div class="mask"><span>Shop</span></div>
@@ -202,7 +249,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="faq.html">
+                                        <a href="{{url_for('main.faq')}}">
                                             <div class="electric-btn"><span class="text">FAQ</span>
                                                 <div class="mask"><span>FAQ</span></div>
                                                 <div class="mask"><span>FAQ</span></div>
@@ -214,7 +261,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">
+                                        <a href="{{url_for('main.contacts')}}">
                                             <div class="electric-btn"><span class="text">Contacts</span>
                                                 <div class="mask"><span>Contacts</span></div>
                                                 <div class="mask"><span>Contacts</span></div>
@@ -230,11 +277,11 @@
                             <!-- /desktop-nav -->
                         </div>
                         <div class="tt-col-objects">
-                            <div class="tt-col__item d-block d-lg-none">
+                            <!-- <div class="tt-col__item d-block d-lg-none">
                                 <div class="tt-obj tt-obj-cart js-dropdown-cart"><a href="#" class="tt-obj__btn"><i class="icon-808584"></i><div class="tt-obj__badge">2</div></a>
                                     <div class="tt-obj__dropdown"></div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="tt-col__item d-block d-lg-none"><a href="#" id="tt-menu-toggle" class="icon-545705"></a></div>
                             <div class="tt-col__item d-none d-lg-block"><a href="#" class="tt-btn btn__color01" data-toggle="modal" data-target="#modalMakeAppointment"><span class="icon-lightning"></span>Appointent</a></div>
                         </div>
@@ -243,6 +290,21 @@
             </div>
         </div>
     </header>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+            <label>
+                <input type="checkbox" class="alertCheckbox" autocomplete="off" />
+                <div class="alert {{category}}">
+                  <span class="alertClose">X</span>
+                  <span class="alertText">{{message}} </span>
+                </div>
+            </label>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
     <main id="tt-pageContent">
         <div class="container-indent no-margin mainSlider-wrapper">
             <div id="js-mainSlider" class="mainSlider">
@@ -297,11 +359,11 @@
             <div class="order-form">
                 <div class="order-form__title" id="js-toggle-orderform"><i class="tt-arrow down"></i> Request Service Today</div>
                 <div class="order-form__content form-order">
-                    <form id="orderform" method="post" novalidate="novalidate" action="#">
-                        <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Your name"></div>
-                        <div class="form-group"><input type="text" name="email" class="form-control" placeholder="Your e-mail"></div>
-                        <div class="form-group"><input type="text" name="phonenumber" class="form-control" placeholder="Your phone"></div>
-                        <div class="form-group"><span class="icon icon-747993"></span> <input name="date" class="datepicker-1 form-control" autocomplete="off" placeholder="Date" type="text">
+                    <form  method="post" novalidate="novalidate" action="{{url_for('main.request_service')}}">
+                        <div class="form-group"><input type="text" name="client_name" class="form-control" placeholder="Your name"></div>
+                        <div class="form-group"><input type="text" name="client_email" class="form-control" placeholder="Your e-mail"></div>
+                        <div class="form-group"><input type="text" name="client_number" class="form-control" placeholder="Your phone"></div>
+                        <div class="form-group"><span class="icon icon-747993"></span> <input name="appointment_date" class="datepicker-1 form-control" autocomplete="off" placeholder="Date" type="text">
                             <div class="form-group__icon icon-calendar"></div>
                         </div>
                         <div class="form-group"><button class="tt-btn btn__color01" type="submit"><span class="icon-lightning"></span>Get Service</button></div>
@@ -423,7 +485,7 @@
 				}'>
                     <div class="col-md-4">
                         <div class="tt-box02">
-                            <a href="services-item.html" class="tt-box02__img icon-light">
+                            <a href="services-item.html" class="tt-box02__img fa-solid fa-plug">
                                 <div class="tt-bg-dark"><img data-src="../static/images/box02-img01.jpg" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="tt-img-main lazyload" alt=""></div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAADdAQMAAABXKdgSAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABtJREFUWMPtwTEBAAAAwiD7p7bETmAAAAAAjQMQZwAByGriPgAAAABJRU5ErkJggg=="
                                     data-src="../static/images/mask-img01.png" class="tt-img-mask lazyload" alt=""></a>
                             <h6 class="tt-box02__title"><a href="#">Electrical Service</a></h6>
@@ -433,9 +495,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="tt-box02">
-                            <a href="services-item.html" class="tt-box02__img icon-tool">
+                            <a href="services-item.html" class="tt-box02__img fa-solid fa-temperature-arrow-up ">
                                 <div class="tt-bg-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAADdAQMAAABXKdgSAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABtJREFUWMPtwTEBAAAAwiD7p7bETmAAAAAAjQMQZwAByGriPgAAAABJRU5ErkJggg==" data-src="../static/images/box02-img02.jpg"
-                                        class="tt-img-main lazyload" alt=""></div><img data-src="images/mask-img01.png" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="tt-img-mask lazyload" alt=""></a>
+                                        class="tt-img-main lazyload" alt=""></div><img data-src="../static/images/mask-img01.png" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="tt-img-mask lazyload" alt=""></a>
                             <h6 class="tt-box02__title"><a href="#">Heating Service</a></h6>
                             <p>We offer energy efficient electric heat products and installations.</p>
                             <div class="tt-row-btn"><a href="services-item.html" class="tt-link">More info<span class="icon-arrowhead-pointing-to-the-right-1"></span></a></div>
@@ -443,7 +505,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="tt-box02">
-                            <a href="services-item.html" class="tt-box02__img icon-air-conditioner">
+                            <a href="services-item.html" class="tt-box02__img  fa-solid fa-fan">
                                 <div class="tt-bg-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAADdAQMAAABXKdgSAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABtJREFUWMPtwTEBAAAAwiD7p7bETmAAAAAAjQMQZwAByGriPgAAAABJRU5ErkJggg==" data-src="../static/images/box02-img03.jpg"
                                         class="tt-img-main lazyload" alt=""></div><img data-src="../static/images/mask-img01.png" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="tt-img-mask lazyload" alt=""></a>
                             <h6 class="tt-box02__title"><a href="#">Air Conditioning</a></h6>
@@ -453,9 +515,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="tt-box02">
-                            <a href="services-item.html" class="tt-box02__img icon-security-camera">
+                            <a href="services-item.html" class="tt-box02__img fa-solid fa-lock">
                                 <div class="tt-bg-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAADdAQMAAABXKdgSAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABtJREFUWMPtwTEBAAAAwiD7p7bETmAAAAAAjQMQZwAByGriPgAAAABJRU5ErkJggg==" data-src="../static/images/box02-img04.jpg"
-                                        class="tt-img-main lazyload" alt=""></div><img data-src="images/mask-img01.png" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="tt-img-mask lazyload" alt=""></a>
+                                        class="tt-img-main lazyload" alt=""></div><img data-src="../static/images/mask-img01.png" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="tt-img-mask lazyload" alt=""></a>
                             <h6 class="tt-box02__title"><a href="#">Security Systems</a></h6>
                             <p>You can view events over a monitor in our home.</p>
                             <div class="tt-row-btn"><a href="services-item.html" class="tt-link">More info<span class="icon-arrowhead-pointing-to-the-right-1"></span></a></div>
@@ -463,7 +525,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="tt-box02">
-                            <a href="services-item.html" class="tt-box02__img icon-computer">
+                            <a href="services-item.html" class="tt-box02__img fa-solid fa-solar-panel">
                                 <div class="tt-bg-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAADdAQMAAABXKdgSAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABtJREFUWMPtwTEBAAAAwiD7p7bETmAAAAAAjQMQZwAByGriPgAAAABJRU5ErkJggg==" data-src="../static/images/box02-img05.jpg"
                                         class="tt-img-main lazyload" alt=""></div><img data-src="../static/images/mask-img01.png" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="tt-img-mask lazyload" alt=""></a>
                             <h6 class="tt-box02__title"><a href="#">Panels Changes</a></h6>
@@ -473,7 +535,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="tt-box02">
-                            <a href="services-item.html" class="tt-box02__img icon-screwdriver-and-wrench-crossed">
+                            <a href="services-item.html" class="tt-box02__img fa-solid fa-wrench">
                                 <div class="tt-bg-dark"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAADdAQMAAABXKdgSAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABtJREFUWMPtwTEBAAAAwiD7p7bETmAAAAAAjQMQZwAByGriPgAAAABJRU5ErkJggg==" data-src="../static/images/box02-img06.jpg"
                                         class="tt-img-main lazyload" alt=""></div><img data-src="../static/images/mask-img01.png" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" class="tt-img-mask lazyload" alt=""></a>
                             <h6 class="tt-box02__title"><a href="#">Trouble Shooting</a></h6>
@@ -491,7 +553,7 @@
                         <div class="tt-box01__description">
                             <h4 class="tt-box01__title">Do you <span class="tt-base-color">Need Help</span><br>With Electrical<br>Maintenance?</h4>
                             <p>Our electrical repair and service options are proudly offered to clients. Give us a call today to schedule a free service estimate!</p>
-                            <div class="tt-row-btn"><a class="tt-btn btn__color01" href="tel:1(800)7654321"><span class="icon-telephone"></span>Give Us a Call</a> <a class="tt-btn btn__color02" data-toggle="modal" data-target="#modalMakeAppointment" href="#"><span class="icon-lightning"></span>Free Estimate</a></div>
+                            <div class="tt-row-btn"><a class="tt-btn btn__color01" href="tel:1(800)7654321"><i class="icon-telephone"></i>Give Us a Call</a> <a class="tt-btn btn__color02" data-toggle="modal" data-target="#modalMakeAppointment" href="#"><i class="icon-lightning"></i>Free Estimate</a></div>
                         </div>
                     </div>
                 </div>
@@ -514,35 +576,35 @@
                 </div>
                 <div id="filter-layout" class="row justify-content-center gallery-innerlayout-wrapper js-wrapper-gallery">
                     <div class="col-4 col-md-3 col-custom-item5 residences show all">
-                        <a href="images/gallery01-01.jpg" class="tt-gallery">
+                        <a href="../static/images/gallery01-01.jpg" class="tt-gallery">
                             <div class="gallery__icon"></div><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="../static/images/gallery01-01.jpg" alt=""></a>
                     </div>
                     <div class="col-4 col-md-3 col-custom-item5 residences show all">
-                        <a href="images/gallery01-02.jpg" class="tt-gallery">
+                        <a href="../static/images/gallery01-02.jpg" class="tt-gallery">
                             <div class="gallery__icon"></div><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="../static/images/gallery01-02.jpg" alt=""></a>
                     </div>
                     <div class="col-4 col-md-3 col-custom-item5 residences show all">
-                        <a href="images/gallery01-03.jpg" class="tt-gallery">
+                        <a href="../static/images/gallery01-03.jpg" class="tt-gallery">
                             <div class="gallery__icon"></div><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="../static/images/gallery01-03.jpg" alt=""></a>
                     </div>
                     <div class="col-4 col-md-3 col-custom-item5 industrial_objects show all">
-                        <a href="images/gallery01-04.jpg" class="tt-gallery">
+                        <a href="../static/images/gallery01-04.jpg" class="tt-gallery">
                             <div class="gallery__icon"></div><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="../static/images/gallery01-04.jpg" alt=""></a>
                     </div>
                     <div class="col-4 col-md-3 col-custom-item5 offices show all">
-                        <a href="images/gallery01-05.jpg" class="tt-gallery">
+                        <a href="../static/images/gallery01-05.jpg" class="tt-gallery">
                             <div class="gallery__icon"></div><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="../static/images/gallery01-05.jpg" alt=""></a>
                     </div>
                     <div class="col-4 col-md-3 col-custom-item5 industrial_objects show all">
-                        <a href="images/gallery01-06.jpg" class="tt-gallery">
+                        <a href="../static/images/gallery01-06.jpg" class="tt-gallery">
                             <div class="gallery__icon"></div><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="../static/images/gallery01-06.jpg" alt=""></a>
                     </div>
                     <div class="col-4 col-md-3 col-custom-item5 retail_objects show all">
-                        <a href="images/gallery01-07.jpg" class="tt-gallery">
+                        <a href="../static/images/gallery01-07.jpg" class="tt-gallery">
                             <div class="gallery__icon"></div><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="../static/images/gallery01-07.jpg" alt=""></a>
                     </div>
                     <div class="col-4 col-md-3 col-custom-item5 offices show all">
-                        <a href="images/gallery01-08.jpg" class="tt-gallery">
+                        <a href="../static/images/gallery01-08.jpg" class="tt-gallery">
                             <div class="gallery__icon"></div><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="../static/images/gallery01-08.jpg" alt=""></a>
                     </div>
                     <div class="col-4 col-md-3 col-custom-item5 retail_objects show all">
@@ -550,7 +612,7 @@
                             <div class="gallery__icon"></div><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="../static/images/gallery01-09.jpg" alt=""></a>
                     </div>
                     <div class="col-4 col-md-3 col-custom-item5 retail_objects show all">
-                        <a href="images/gallery01-10.jpg" class="tt-gallery">
+                        <a href="../static/images/gallery01-10.jpg" class="tt-gallery">
                             <div class="gallery__icon"></div><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="../static/images/gallery01-10.jpg" alt=""></a>
                     </div>
                     <div class="col-12 text-center tt-top-more" id="js-more-include" data-include="ajax-content/more-gallery-innerlayout.php"><a href="#" class="tt-link tt-link__lg">View all projects<span class="icon-arrowhead-pointing-to-the-right-1"></span></a></div>
@@ -640,7 +702,7 @@
                         <div class="tt-box03__img tt-visible-mobile lazyload" data-bg="../static/images/box03_img01.jpg"></div>
                         <div class="tt-box03__extra">
                             <div class="tt-title">Emergency Service</div>
-                            <p>If this is an emergency outside of normal business hours, call us</p><address><a href="tel:1(800)7654321"><i class="icon-telephone"></i> 1 (800) 765-43-21</a></address></div>
+                            <p>If this is an emergency outside of normal business hours, call us</p><address><a href="tel:1(800)7654321"><i class="fa-solid fa-phone"></i> 1 (800) 765-43-21</a></address></div>
                     </div>
                     <div class="tt-box03__img tt-visible-desktop lazyload" data-bg="../static/images/box03_img01.jpg"></div>
                 </div>
@@ -708,7 +770,7 @@
                                 </ul>
                                 <hr class="tt-layout02__hr">
                                 <div class="tt-layout02__price">$130.00</div>
-                                <div class="tt-layout02__link"><a href="#" data-toggle="modal" data-target="#modalMakeAppointment" class="tt-link">Order now<span class="icon-arrowhead-pointing-to-the-right-1"></span></a></div>
+                                <div class="tt-layout02__link"><a href="#" data-toggle="modal" data-target="#modalMakeAppointment" class="tt-link">Order now<span class="fa-solid fa-play fa-2xs" style="padding-left: 0.1cm; color: #df4620;"></span></a></div>
                             </div>
                         </div>
                         <div class="item col-md-4">
@@ -726,7 +788,7 @@
                                 </ul>
                                 <hr class="tt-layout02__hr">
                                 <div class="tt-layout02__price">$12.00</div>
-                                <div class="tt-layout02__link"><a href="#" data-toggle="modal" data-target="#modalMakeAppointment" class="tt-link">Order now<span class="icon-arrowhead-pointing-to-the-right-1"></span></a></div>
+                                <div class="tt-layout02__link"><a href="#" data-toggle="modal" data-target="#modalMakeAppointment" class="tt-link">Order now<span class="fa-solid fa-play fa-2xs" style="padding-left: 0.1cm; color: #df4620;"></span></a></div>
                             </div>
                         </div>
                         <div class="item col-md-4">
@@ -744,7 +806,7 @@
                                 </ul>
                                 <hr class="tt-layout02__hr">
                                 <div class="tt-layout02__price">$89.00</div>
-                                <div class="tt-layout02__link"><a href="#" data-toggle="modal" data-target="#modalMakeAppointment" class="tt-link">Order now<span class="icon-arrowhead-pointing-to-the-right-1"></span></a></div>
+                                <div class="tt-layout02__link"><a href="#" data-toggle="modal" data-target="#modalMakeAppointment" class="tt-link">Order now<span class="fa-solid fa-play fa-2xs" style="padding-left: 0.1cm; color: #df4620;"></span></a></div>
                             </div>
                         </div>
                     </div>
@@ -755,11 +817,11 @@
             <div class="tt-box01 lazyload" data-bg="../static/images/box01-bg02-desktop.jpg">
                 <div class="container">
                     <div class="tt-box01__holder">
-                        <div class="tt-box01__video"><a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="tt-video js-video-popup"><i class="icon-arrowhead-pointing-to-the-right-1"></i></a></div>
+                        <div class="tt-box01__video"><a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="tt-video js-video-popup"><i class="fa-solid fa-play"></i></a></div>
                         <div class="tt-box01__description">
                             <h4 class="tt-box01__title">Your <span class="tt-base-color">Best Option</span><br>in Electrical<br>Contractors 24/7</h4>
                             <p>Our experienced electricians are highly trained in all aspects of electrical service, from office lighting and security systems to emergency repair.</p>
-                            <div class="tt-row-btn"><a class="tt-btn btn__color01" data-toggle="modal" data-target="#modalMakeAppointment" href="#"><span class="icon-lightning"></span>Explore services</a></div>
+                            <div class="tt-row-btn"><a class="tt-btn btn__color01" data-toggle="modal" data-target="#modalMakeAppointment" href="#"><i class="fa-solid fa-bolt" style=" padding-right: 0.1cm;"></i>Explore services</a></div>
                         </div>
                     </div>
                 </div>
@@ -838,10 +900,10 @@
     <footer id="tt-footer">
         <div class="footer-wrapper">
             <div class="container container-lg-fluid container-lg__no-gutters">
-                <form id="subscribeform" method="post" novalidate="novalidate" action="#">
+                <form  method="post" novalidate="novalidate" action="/news_letter">
                     <div class="f-form">
                         <div class="f-form__label">Subscribe to Our Newsletter</div>
-                        <div class="f-form__input"><input type="text" name="email" class="form-control" placeholder="Your e-mail address"></div>
+                        <div class="f-form__input"><input type="text" name="sub_email" class="form-control" placeholder="Your e-mail address"></div>
                         <div class="f-form__btn"><button class="tt-btn btn__color02" type="submit"><span class="icon-482948 tt-icon-left"></span> Subscribe &nbsp;<span class="tt-short-text">now</span></button></div>
                         <div class="tt-modal-message">Form sent successfully</div>
                     </div>
@@ -853,7 +915,7 @@
                         <div class="additional-strut">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="f-logo"><a href="index.html" class="f-logo"><span class="tt-icon"><img src="images/logo-dark.png" alt=""></span><span class="tt-text">Electron</span></a>
+                                    <div class="f-logo"><a href="{{url_for('main.index')}}" class="f-logo"><span class="tt-icon"><img src="images/logo-dark.png" alt=""></span><span class="tt-text">Electron</span></a>
                                         <!-- /logo -->
                                     </div>
                                 </div>
@@ -866,22 +928,22 @@
                             <div class="col-sm-6 col-md-5">
                                 <nav class="f-nav" id="f-nav">
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">Gallery</a></li>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Shop</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="#">Prices</a></li>
-                                        <li><a href="#">Contacts</a></li>
+                                        <li><a href="{{url_for('main.index')}}">Home</a></li>
+                                        <li><a href="{{url_for('main.gallery')}}">Gallery</a></li>
+                                        <li><a href="{{url_for('main.about')}}">About Us</a></li>
+                                        <li><a href="{{url_for('shop.page1')}}">Shop</a></li>
+                                        <li><a href="{{url_for('main.services')}}">Services</a></li>
+                                        <li><a href="{{url_for('main.faq')}}">FAQ</a></li>
+                                        <li><a href="{{url_for('main.prices')}}">Prices</a></li>
+                                        <li><a href="{{url_for('main.contacts')}}">Contacts</a></li>
                                     </ul>
                                 </nav>
                             </div>
                             <div class="col-sm-6 col-md-7">
                                 <ul class="f-info-icon">
-                                    <li><span class="icon-map-marker"></span> 8494 Signal Hill Road Manassas,<br>VA, 20110</li>
-                                    <li><span class="icon-clock-circular-outline-1"></span> Mon-Fri 08:00 AM - 05:00 PM</li>
-                                    <li><a href="tel:1(800)7654321"><span class="icon-telephone"></span> 1 (800) 765-43-21</a></li>
+                                    <li><span class="fa-solid fa-location-dot" style="padding-right: 0.2cm; color: #df4620;"></span> 8494 Signal Hill Road Manassas,<br>VA, 20110</li>
+                                    <li><span class="fa-solid fa-clock" style="padding-right: 0.2cm; color: #df4620;"></span> Mon-Fri 08:00 AM - 05:00 PM</li>
+                                    <li><a href="tel:1(800)7654321"><span class="fa-solid fa-phone" style="padding-right: 0.2cm; color: #df4620;"></span> 1 (800) 765-43-21</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -892,9 +954,9 @@
                     <div class="col-sm-auto">&copy; 2022 Electrical Services. All Rights Reserved.</div>
                     <div class="col-sm-auto ml-sm-auto">
                         <ul class="f-social">
-                            <li><a href="#" class="icon-twitter-logo-button"></a></li>
-                            <li><a href="#" class="icon-facebook-logo-button"></a></li>
-                            <li><a href="#" class="icon-instagram-logo"></a></li>
+                            <li><a href="#" class="fa-brands fa-square-twitter"></a></li>
+                            <li><a href="#" class="fa-brands fa-facebook"></a></li>
+                            <li><a href="#" class="fa-brands fa-instagram"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -908,34 +970,34 @@
     <div class="modal fade" id="modalMakeAppointment" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-md">
             <div class="modal-content">
-                <div class="modal-body form-default modal-layout-dafault"><button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-860796"></span></button>
+                <div class="modal-body form-default modal-layout-dafault"><button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="fa-solid fa-xmark"></span></button>
                     <div class="modal-titleblock">
                         <div class="modal-title">Make an Appointment</div>
                     </div>
-                    <form class="form-modal" id="jsFormMakeAppointment" method="post" novalidate="novalidate" action="#">
-                        <div class="form-group"><input type="text" name="name" class="form-control" id="modalName01" placeholder="Your Name *"></div>
+                    <form class="form-modal" method="post" novalidate="novalidate" action="{{url_for('main.appointment')}}">
+                        <div class="form-group"><input type="text" name="client_name" class="form-control" id="modalName01" placeholder="Your Name *"></div>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group"><input type="text" name="email" class="form-control" id="modalEmail01" placeholder="Your e-mail address *"></div>
+                                <div class="form-group"><input type="text" name="client_email" class="form-control" id="modalEmail01" placeholder="Your e-mail address *"></div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group"><input type="text" name="phone" class="form-control" id="modalPhone01" placeholder="Your phone number"></div>
+                                <div class="form-group"><input type="text" name="client_number" class="form-control" id="modalPhone01" placeholder="Your phone number"></div>
                             </div>
                         </div>
-                        <div class="form-group"><input type="text" name="modalAddress" class="form-control" id="modalAddress" placeholder="Address *"></div>
+                        <div class="form-group"><input type="text" name="client_Address" class="form-control" id="modalAddress" placeholder="Address *"></div>
                         <div class="form-group">
-                            <div class="custom-select"><select name="typeofservice" class="tt-select"><option value="Service">Service</option><option value="Service 02">Service 02</option><option value="Service 03">Service 03</option><option value="Service 04">Service 04</option><option value="Service 05">Service 05</option></select></div>
+                            <div class="custom-select"><select name="typeofservice" class="tt-select"><option value="Electrical Repairs">Electrical Repairs</option><option value="Panel Upgrades">Panel Upgrades</option><option value="Lighting Upgrades">Lighting Upgrades</option><option value="Surge Protection">Surge Protection</option><option value="Generator Repair">Generator Repair</option><option value="solar installation">solar installation</option><option value="Outdoor and Motion Lighting">Outdoor and Motion Lighting</option><option value="Digital Thermostat Installation">Digital Thermostat Installation</option><option value="Baseboard Heating Installation">Baseboard Heating Installation</option></select></div>
                         </div>
-                        <div class="form-group"><input name="date" placeholder="Date of visit" autocomplete="off" data-timepicker="true" class="js_datepicker-1 form-control" type="text">
+                        <div class="form-group"><input name="appointment_date" placeholder="Date of visit" autocomplete="off" data-timepicker="true" class="js_datepicker-1 form-control" type="text">
                             <div class="form-group__icon icon-747993"></div>
                         </div>
-                        <div class="form-group"><textarea name="message" class="form-control" placeholder="Your comment"></textarea></div><button type="submit" class="tt-btn btn__color01"><span class="icon-lightning"></span>Explore services</button>
+                        <div class="form-group"><textarea name="appoint_msg" class="form-control" placeholder="Your comment"></textarea></div><button type="submit" class="tt-btn btn__color01"><span class="icon-lightning"></span>Explore services</button>
                         <div class="tt-modal-message">Form sent successfully</div>
                     </form>
                 </div>
             </div>
         </div>
-    </div><a href="#" id="js-backtotop" class="tt-back-to-top"><i class="icon-lightning"></i></a>
+    </div><a href="#" id="js-backtotop" class="tt-back-to-top"><i class="fa-solid fa-bolt" style=" padding-right: 0.1cm;"></i></a>
     <script>
         var giftofspeed = document.createElement('link');
         giftofspeed.rel = 'stylesheet';

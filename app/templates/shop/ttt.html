@@ -1,0 +1,130 @@
+{% extends 'shop/shop.html'%}
+
+{% block head %}
+
+<meta charset="utf-8">
+    {% block title %} <title>Electron - Responsive HTML5 Template</title> {% endblock %}
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="Electron - Responsive HTML5 Template">
+    <meta name="author" content="Electron">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/page__shop.css">
+    <link rel="stylesheet" href="../static/css/page__block-aside.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://widget.tochat.be/bundle.js?key=c2e68c25-c569-4e4e-bb08-c02af0c00491"></script>
+    <link rel="stylesheet" href="../static/css/product__details.css">
+{% endblock %}
+
+{% block product_title %}
+<h1>generator </h1>
+{% endblock %}
+
+{% block remove%}
+{% endblock %}
+
+{% block content %}
+<div class="card-wrapper">
+    <div class="cards">
+        <!-- card left -->
+        <div class="product-imgs">
+            <div class="img-display">
+                <div class="img-showcase">
+                    <img src="../static/images/product/product-01.jpg" alt=" generator">
+                    <img src="../static/images/product/product-01.jpg" alt=" generator">
+                    <img src="../static/images/product/product-01.jpg" alt=" generator">
+                    <img src="../static/images/product/product-01.jpg" alt=" generator">
+                    <img src="../static/images/product/product-01.jpg" alt=" generator">
+                </div>
+            </div>
+            <div class="img-select">
+                <div class="img-item">
+                    <a href="#" data-id="1">
+                        <img src="../static/images/product/product-02.jpg" alt="cable image">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="2">
+                        <img src="../static/images/product/product-02.jpg" alt="cable image">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="3">
+                        <img src="../static/images/product/product-02.jpg" alt="cable image">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#" data-id="4">
+                        <img src="../static/images/product/product-02.jpg" alt="cable image">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- card right -->
+
+        <div class="product-content">
+            <h2 class="product--title">generator</h2>
+            <a href="#">contact seller</a>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.7(21)</span>
+            </div>
+
+            <div class="product-price">
+                <p class="last-price"> old price: <span>$260.00</span></p>
+                <p class="new-price"> old price: <span>$290.00</span></p>
+            </div>
+            <div class="product-detail">
+                <h2> this is item: </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repudiandae
+                        eveniet pariatur animi culpa itaque nihil incidunt, molestiae nesciunt in non
+                        facere aliquam aliquid voluptate excepturi accusantium quo repellat iste?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Id quisquam iure sunt pariatur, aperiam at optio cupidit
+                    </p>
+                    <ul>
+                        <li>color: <span>black</span></li>
+                        <li>available: <span>in stock</span></li>
+                        <li>category: <span> shoes </span></li>
+                        <li>shipping area: <span> all over the world</span></li>
+                        <li>shipping fee: <span> free </span></li>
+                    </ul>
+            </div>
+            <div class="purchase-info">
+                <input type="number" min="0" value="1">
+                <button type="button" class="btn">
+                    purchase now <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button type="button" class="btn">compare</button>
+            </div>
+            <div class="social-links">
+                <p>share at:</p>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-pinterest"></i>
+                </a> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/script.js"></script>
+{% endblock %}
+
+
+
