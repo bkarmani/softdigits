@@ -572,6 +572,7 @@
                 <div id="map"></div>
                 <div class="f-copyright row no-gutters">
                     <div class="col-sm-auto">&copy; 2022 Electrical Services. All Rights Reserved.</div>
+                    <div class="col-sm-auto ml-sm-auto" id="google_translate_element"></div>
                     <div class="col-sm-auto ml-sm-auto">
                         <ul class="f-social">
                             <li><a href="#" class="fa-brands fa-twitter-square"></a></li>
@@ -588,6 +589,7 @@
     <script async src="../../../static/js/bundle.js"></script>
     <script src="../../../static/js/external/no-ui-slider/nouislider.min.js"></script>
     <script src="../../../static/js/separate-include/shop-listing.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <!-- modal - Make an Appointment -->
     <div class="modal fade" id="modalMakeAppointment" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-md">
@@ -639,6 +641,16 @@
             window.location.href = "{{ url_for('shop.preorder', desc='') }}" + desc;
         });
     </script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+
 
 </body>
 

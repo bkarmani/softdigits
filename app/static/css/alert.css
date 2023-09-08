@@ -2,7 +2,7 @@
     position: absolute;
     top: 125px;
     right: 120px;
-    width: 30%;
+    width: 40%;
     height: auto;
     padding: 10px;
     margin: 10px;
@@ -47,11 +47,21 @@
     border: 1px solid #DDD;
     color: #999;
   }
+
+  .info .alertText::before{
+    content: '\2139';
+    padding-right: 10px;
+  }
   
   .success {
     background-color: #EFE;
     border: 1px solid #DED;
     color: #9A9;
+  }
+
+  .success .alertText::before {
+    content: '\2714';
+    padding-right: 10px;
   }
   
   .notice {
@@ -59,15 +69,61 @@
     border: 1px solid #DEE;
     color: #9AA;
   }
+
+  .notice .alertText::before{
+    content: '\26A0';
+    padding-right: 10px;
+  }
   
   .warning {
     background-color: #FDF7DF;
     border: 1px solid #FEEC6F;
     color: #C9971C;
   }
+
+  .warning .alertText::before{
+    content: '\2139';
+    padding-right: 10px;
+  }
   
   .error {
     background-color: #FEE;
     border: 1px solid #EDD;
     color: #A66;
+  }
+
+  /* @media screen and (min-width: 992px){
+    .alert {
+      position: relative;
+      top: 125px;
+      right: 120px;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      margin: 10px;
+      line-height: 1.8;
+      border-radius: 5px;
+      cursor: hand;
+      cursor: pointer;
+      font-family: sans-serif;
+      font-weight: 400;
+    }
+  } */
+
+  @media (min-width:576px) {
+    .alert {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      margin: 10px;
+      line-height: 1.8;
+      border-radius: 5px;
+      cursor: hand;
+      cursor: pointer;
+      font-family: sans-serif;
+      font-weight: 400;
+    }
   }

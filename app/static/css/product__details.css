@@ -101,7 +101,7 @@ img{
     font-weight: 400;
 }
 .last-price span{
-    color: #f64749;
+    color: #f47629;
     text-decoration: line-through;
 }
 .new-price span{
@@ -161,7 +161,7 @@ img{
     background: #256eff;
 }
 .purchase-info .btn:last-of-type{
-    background: #f64749;
+    background: #f47629;
 }
 .purchase-info .btn:hover{
     opacity: 0.9;
