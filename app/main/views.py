@@ -8,6 +8,9 @@ import re
 from ..models import Products
 import smtplib
 
+
+admin_sender = 'bk.frankie200@gmail.com'
+
 def is_valid_email(email):
     pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
     return re.match(pattern, email) is not None
@@ -39,12 +42,23 @@ def news_letter():
                         'electron@sandboxa7f55fb25a5444a0addd0fc153c3039c.mailgun.org',
                         '8023f9a76db2402179a28cb1bbd8a16b-4e034d9e-3058ef0c')
             flash('you have successfully subscribed to our newsletter', category='success')
-            subject='TEST EMAIL'
-            sender='benjaminozor247@yahoo.com'
+            subject='NEWSLETTER SUBSCRIPTION'
+            sender= admin_sender
             recipient = email
-            message = 'come and cath me'
-            send_email(subject,sender, recipient, message)       
+            template = 'emails/newsletter'
+            send_email(subject,sender, recipient, template, user=email)       
     return redirect(request.referrer)
+
+@main.route('/unsubscribe/<email>')
+def unsubscribe(email):
+    sub_email = Subscribers.query.filter_by(email=email).first()
+    if sub_email:
+        db.session.delete(sub_email)
+        db.session.commit()
+        flash('you have seccessfully unsubscribed from our service',category='success')
+    else:
+        flash('user unsubscribed or not a subscriber', category='warning') 
+    return redirect(url_for('main.index'))
 
 @main.route('/appointment', methods=['GET', 'POST'])
 def appointment():
@@ -58,15 +72,24 @@ def appointment():
         message =  request.form.get('appoint_msg')
         if not is_valid_email(email):
             flash('please enter a valid email', category='danger')
-        elif not is_valid_phone(phone_number):
-            flash('please enter a valid phone number', category='danger')
         else:
-            print(phone_number)
-            print(name)
-            print(email)
-            print(date)
-            # send_email()
-            flash('success', category='success')
+            sender = email
+            subject = f'Appointment Confirmation-{name}'
+            template = 'emails/appointment'
+            template2 = 'emails/customer-appoint'
+            recipient = admin_sender
+            # notify owner via email
+            send_email(subject,sender, recipient, template, email=email,
+                       customer_name=name, phone_number=phone_number, address=address,
+                        services=services, date=date, message=message)
+            
+            #notify customer via email
+            send_email(subject,recipient, sender, template2, email=email,
+                       customer_name=name, phone_number=phone_number, address=address,
+                        services=services, date=date, message=message)
+            
+            # notify customer when appointment booking is successful
+            flash('appointment booked successfully', category='success')
     return redirect(request.referrer)
 
 @main.route('/request_service', methods=['GET', 'POST'])
@@ -78,15 +101,24 @@ def request_service():
         date = request.form.get('appointment_date')
         if not is_valid_email(email):
             flash('please enter a valid email', category='danger')
-        elif not is_valid_phone(phone_number):
-            flash('please enter a valid phone number', category='danger')
         else:
-            print(phone_number)
-            print(name)
-            print(email)
-            print(date)
-            # send_email()
-            flash('success', category='success')
+            subject = 'SERVICE REQUEST'
+            sender = email
+            recipient = admin_sender
+            template = 'mails/service-request'
+            template2 = 'mails/service-request2'
+
+            #notify owner via email
+            send_email(subject,sender, recipient, template, email=email,
+                       customer_name=name, phone_number=phone_number,
+                        services=services, date=date)
+            
+            #notify customer via email
+            send_email(subject,recipient, sender, template2, email=email,
+                       customer_name=name, phone_number=phone_number,
+                        services=services, date=date)
+            
+            flash('service request success', category='success')
     return redirect(request.referrer)
 
 @main.route('/feedback', methods=['GET', 'POST'])
@@ -98,14 +130,14 @@ def feedback():
         message = request.form.get('message')
         if not is_valid_email(email):
             flash('please enter a valid email', category='danger')
-        elif not is_valid_phone(phone_number):
-            flash('please enter a valid phone number', category='danger')
         else:
-            print(phone_number)
-            print(name)
-            print(email)
-            print(message)
-            # send_email()
+            subject = f'FEEDBACK-{name}'
+            sender = email
+            recipient = admin_sender
+            template = 'emails/feedback'
+            send_email(subject,sender, recipient, template, email=email,
+                       customer_name=name, phone_number=phone_number,
+                        comments=message)
             flash('success', category='success')
     return redirect(request.referrer)
 
@@ -139,8 +171,6 @@ def about():
 
 @main.route('/services')
 def services():
-    # news_form = NewsLetterForm()
-    # appointment_form = AppointmentForm()
     return render_template('services.html')
 
 @main.route('/services-item')

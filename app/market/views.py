@@ -4,6 +4,21 @@ from .forms import ProductForm, PreOrderForm
 from .. import db
 from flask import render_template, redirect, url_for, flash, request
 from werkzeug.utils import secure_filename
+from ..emails import send_email
+import random
+
+
+#produce unique random numbers as order number
+def order_sn():
+    start = str(random.randrange(1,100,2))
+    middle = str(random.randint(1, 20))
+    end = str(random.randrange(0,100))
+    number = start + middle + end
+    return number
+
+
+admin_email = 'bk.frankie200@gmail.com'
+
 
 @shop.route('/add_product', methods=['POST', 'GET'])
 def add_product():
@@ -59,8 +74,28 @@ def product_details(desc):
 @shop.route('/page1/product_details/preorder/<desc>', methods=['GET', 'POST'])
 def preorder(desc):
     product= Products.query.filter_by(description=desc).first()
+    if product:
+        product_name = product.product_name
     if request.method == 'POST':
+
         quantity = request.form.get('quantity')
+        email = request.form.get('email')
+        user_subject = 'QUOTES REQUEST'
+        owner_subject = 'NEW OREDR REQUEST'
+        owner = admin_email
+        template_owner = 'emails/notify-owner'
+        template_customer = 'emails/notify-customer'
+        order_number = order_sn()
+        #notify site owner
+        send_email(owner_subject, email, owner, template_owner, 
+                   customer_email=email, quantity=quantity, description=desc,
+                   product_name=product_name, order_no=order_number
+                   )
+        #notify user 
+        send_email(user_subject, owner, email, template_customer, 
+                   quantity=quantity, description=desc, customer_email=email,
+                   product_name=product_name, order_no=order_number
+                   )
     return render_template('shop/preorder.html', quantity=quantity, product=product)
         
 

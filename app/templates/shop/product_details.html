@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Electron - Responsive HTML5 Template</title>
+    <title>Product Details</title>
     <meta name="keywords" content="HTML5 Template">
-    <meta name="description" content="Electron - Responsive HTML5 Template">
-    <meta name="author" content="Electron">
+    <meta name="description" content="Primelectron - purchase goods and services for electrical works">
+    <meta name="author" content="Primelectron">
     <link rel="shortcut icon" href="../../../static/images/favicon.png">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1">
@@ -82,7 +82,7 @@
                 <div class="container container-lg-fluid">
                     <div class="tt-holder">
                         <div class="tt-col-logo">
-                            <!-- logo --><a href="{{url_for('main.index')}}" class="tt-logo tt-logo-alignment"><span class="tt-icon"><img src="../../../static/images/logo.png" alt=""></span>Electron</a>
+                            <!-- logo --><a href="{{url_for('main.index')}}" class="tt-logo tt-logo-alignment"><span class="tt-icon"><img src="../../../static/images/logo.png" alt=""></span>Primelectron</a>
                             <!-- /logo -->
                         </div>
                         <div class="tt-col-objects tt-col-wide text-center">
@@ -127,7 +127,7 @@
                                                 <div class="mask"><span>Services</span></div>
                                             </div>
                                         </a>
-                                        <ul>
+                                        <!-- <ul>
                                             <li><a href="services-item.html">Services Item</a></li>
                                             <li><a href="services-item.html">Sub menu level 01</a></li>
                                             <li><a href="services-item.html">Sub menu level 01</a>
@@ -150,7 +150,7 @@
                                             </li>
                                             <li><a href="services-item.html">Sub menu level 01</a></li>
                                             <li><a href="services-item.html">Sub menu level 01</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <li>
                                         <a href="{{url_for('main.prices')}}">
@@ -187,9 +187,9 @@
                                                 <div class="mask"><span>Blog</span></div>
                                             </div>
                                         </a>
-                                        <ul>
+                                        <!-- <ul>
                                             <li><a href="blog-item.html">Blog Item</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <li>
                                         <a href="{{url_for('shop.page1')}}">
@@ -202,9 +202,9 @@
                                                 <div class="mask"><span>Shop</span></div>
                                             </div>
                                         </a>
-                                        <ul>
+                                        <!-- <ul>
                                             <li><a href="shop-item.html">Shop Item</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <li>
                                         <a href="{{url_for('main.faq')}}">
@@ -327,13 +327,13 @@
                     <p class="new-price"> current price: <span>{{product.price}}</span></p> -->
                 </div>
                 <div class="product-detail">
-                    <h2> this is item: </h2>
+                    <h2>Item Description: </h2>
                         <p>
                             {{product.description}}
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Id quisquam iure sunt pariatur, aperiam at optio cupidit
+                            <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Id quisquam iure sunt pariatur, aperiam at optio cupidit -->
                         </p>
                         <ul>
                             <!-- <li>color: <span>black</span></li> -->
@@ -346,7 +346,7 @@
                 <div class="purchase-info">
                     <form action="{{url_for('shop.preorder', desc=product.description)}}" method="post">
                         <input type="number" name="quantity" min="0" value="1" placeholder="Quantity">
-                        <!-- <input type="email" id="email" name="email" required> -->
+                        <input type="email" placeholder="email" name="email" required>
                         <button type="submit" class="btn">Get Quotes</button>
                     </form>
                     <!-- <button type="button" class="btn">compare</button> -->
@@ -520,7 +520,7 @@
     <footer id="tt-footer">
         <div class="footer-wrapper">
             <div class="container container-lg-fluid container-lg__no-gutters">
-                <form id="subscribeform" method="post" novalidate="novalidate" action="/news_letter">
+                <form  method="post" novalidate="novalidate" action="{{url_for('main.news_letter')}}">
                     <div class="f-form">
                         <div class="f-form__label">Subscribe to Our Newsletter</div>
                         <div class="f-form__input"><input type="text" name="sub_email" class="form-control" placeholder="Your e-mail address"></div>

@@ -1,0 +1,10 @@
+/* Default link styles */
+.nav-link {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Active link styles */
+.nav-link.active {
+    color: #ff6600; /* Change this to the desired active color */
+}

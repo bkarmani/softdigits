@@ -28,8 +28,9 @@ def subscribe_user(email, user_group_email, api_key ):
 #         server.login("58eb16ba86f01f", password)
 #         server.sendmail(sender, receiver, message)
 
-def send_email(subject, sender, recipient, message):
+def send_email(subject, sender, recipient, template,  **kwargs):
     msg = Message(subject, sender=sender, recipients=[recipient])  
-    msg.body = message 
+    # msg.body = render_template(template + '.txt', **kwargs)
+    msg.html = render_template(template + '.html', **kwargs)
     email.send(msg)
     

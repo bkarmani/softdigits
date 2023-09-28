@@ -15,10 +15,10 @@ class Config:
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    MAIL_SERVER='sandbox.smtp.mailtrap.io'
-    MAIL_PORT = 2525
-    MAIL_USERNAME = '58eb16ba86f01f'
-    MAIL_PASSWORD = 'd3414a5caec978'
+    MAIL_SERVER='smtp-relay.sendinblue.com'
+    MAIL_PORT =  2525 
+    MAIL_USERNAME = 'bk.frankie200@gmail.com'
+    MAIL_PASSWORD = 'AncX4GZEgWrsqKNk'
     MAIL_USE_TLS = True
     MAIL_USE_SSL =False
 
