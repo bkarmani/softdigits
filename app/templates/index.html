@@ -15,8 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/alert.css">
+    <link rel="stylesheet" href="../static/css/floating-wpp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="https://widget.tochat.be/bundle.js?key=c2e68c25-c569-4e4e-bb08-c02af0c00491"></script>
+    
 </head>
 
 <body>
@@ -827,6 +828,7 @@
                 </div>
             </div>
         </div>
+        <!-- <div id="myButton"></div> -->
         <div class="section-indent">
             <div class="container container-md-fluid">
                 <div class="row">
@@ -871,6 +873,7 @@
                                         <div class="tt-news-obj__title"><a href="blog-item.html">The Best Way to Clean Light Fixtures</a></div>
                                         <p>While cleaning light fixtures may not be at the top of your to-do list, it’s one of those simple tasks...</p>
                                         <div class="row-btn"><a href="blog-item.html" class="tt-link">Read more<span class="icon-arrowhead-pointing-to-the-right-1"></span></a></div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -967,7 +970,9 @@
     </footer>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script async src="../static/js/bundle.js"></script>
+    <script type="text/javascript" src="../static/js/floating-wpp.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <!-- modal - Make an Appointment -->
     <div class="modal fade" id="modalMakeAppointment" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true">
@@ -1019,6 +1024,22 @@
             );
         }
     </script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '5491133359850',
+            popupMessage: 'Hello, how can we help you?',
+            message: "I'd like to order a pizza",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Welcome!',
+            headerColor: 'crimson',
+            backgroundColor: 'crimson',
+            buttonImage: '<img src="../static/images/burger.svg" />'
+        });
+    });
+</script>
 </body>
 
 </html>
