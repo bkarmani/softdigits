@@ -1954,12 +1954,13 @@ a:hover {
     outline: 0
 }
 
-a:active,
+/* a:active,
 a:focus,
 a:visited {
     text-decoration: none;
     outline: 0
-}
+    
+} */
 
 input[type=text] {
     -webkit-appearance: none;
@@ -6071,6 +6072,9 @@ form {
 .tt-modal-message.tt-active {
     opacity: 1
 }
+
+/* mobile views  */
+
 
 @media (min-width:576px) {
     .container {

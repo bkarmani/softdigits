@@ -6978,7 +6978,7 @@ $("body").append(getFullscreenBg()), $.fn.initMM = function() {
         var cur_url;
         nav.find("> ul > li").each((function() {
             0 != $(this).children("ul").length && $(this).addClass("subMenu")
-        })), cur_url = window.location.href.split("#")[0].split("/").pop() || "index.html", nav.find("li").each((function() {
+        })), cur_url = window.location.pathname || "/", nav.find("li").each((function() {
             var link = $(this).find("a").attr("href");
             cur_url == link && ($(this).addClass("active").closest(".subMenu").addClass("active"), nav.addClass("defined-item"))
         })), nav.hasClass("defined-item") || nav.find("> ul > li:first-child").addClass("active"), nav.find("li").on("mouseenter mouseleave", (function(event) {
@@ -7042,7 +7042,7 @@ $("body").append(getFullscreenBg()), $.fn.initMM = function() {
         var nav = $("#f-nav");
         if (!nav.length) return !1;
         var cur_url;
-        cur_url = window.location.href.split("#")[0].split("/").pop() || "index.html", nav.find("li").each((function() {
+        cur_url = window.location.pathname || "/", nav.find("li").each((function() {
             var link = $(this).find("a").attr("href");
             cur_url == link && ($(this).addClass("active").closest(".subMenu").addClass("active"), nav.addClass("defined-item"))
         })), nav.hasClass("defined-item") || nav.find("> ul > li:first-child").addClass("active")

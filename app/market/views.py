@@ -17,7 +17,7 @@ def order_sn():
     return number
 
 
-admin_email = 'bk.frankie200@gmail.com'
+admin_email = 'sales@primelectron.com'
 
 
 @shop.route('/add_product', methods=['POST', 'GET'])

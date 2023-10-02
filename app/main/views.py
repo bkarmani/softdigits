@@ -9,7 +9,7 @@ from ..models import Products
 import smtplib
 
 
-admin_sender = 'bk.frankie200@gmail.com'
+admin_sender = 'sales@primelectron.com'
 
 def is_valid_email(email):
     pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'

@@ -17,8 +17,8 @@ class Config:
 
     MAIL_SERVER='smtp-relay.sendinblue.com'
     MAIL_PORT =  2525 
-    MAIL_USERNAME = 'bk.frankie200@gmail.com'
-    MAIL_PASSWORD = 'AncX4GZEgWrsqKNk'
+    MAIL_USERNAME = 'sales@primelectron.com'
+    MAIL_PASSWORD = 'wXdEUFyHpqg6b7AJ'
     MAIL_USE_TLS = True
     MAIL_USE_SSL =False
 
