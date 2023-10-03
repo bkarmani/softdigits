@@ -1,6 +1,8 @@
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 basedir = os.path.abspath(os.path.dirname(__file__))
+
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'khvjchlsknbvyuqw99'
@@ -15,37 +17,39 @@ class Config:
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    MAIL_SERVER='smtp-relay.sendinblue.com'
-    MAIL_PORT =  2525 
+    MAIL_SERVER = 'smtp-relay.sendinblue.com'
+    MAIL_PORT = 2525
     MAIL_USERNAME = 'sales@primelectron.com'
     MAIL_PASSWORD = 'wXdEUFyHpqg6b7AJ'
     MAIL_USE_TLS = True
-    MAIL_USE_SSL =False
+    MAIL_USE_SSL = False
 
     @staticmethod
     def init_app(app):
         pass
 
+
 class DeveConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or \
-    'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
+        'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
+
 
 class TestConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_DATABASE_URL') or \
-    'sqlite://'
+        'sqlite://'
+
 
 class ProductionConfig(Config):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI =  os.environ.get('DATABASE_URL') or \
-    'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+        'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+
 
 config = {
     'development': DeveConfig,
-    'testing' : TestConfig,
-    'production' : ProductionConfig,
-    'default' : DeveConfig
+    'testing': TestConfig,
+    'production': ProductionConfig,
+    'default': DeveConfig
 }
-
-#'postgresql://postgres:Bugati1993_##@localhost/e-commerce'
