@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <script defer src="https://widget.tochat.be/bundle.js?key=c2e68c25-c569-4e4e-bb08-c02af0c00491"></script> -->
+    <link rel="stylesheet" href="../static/css/floating-wpp.css">
 
 </head>
 
@@ -291,6 +291,9 @@
             </ul>
         </div>
     </div>
+
+    <div id="myButton"></div>
+
     <main id="tt-pageContent">
         <div class="section-indent">
             <div class="container container-md-fluid">
@@ -674,7 +677,9 @@
     </footer>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script async src="../static/js/bundle.js"></script>
+    <script type="text/javascript" src="../static/js/floating-wpp.js"></script>
     <script type="text/javascript"
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <!-- modal - Make an Appointment -->
@@ -748,6 +753,22 @@
                 'google_translate_element'
             );
         }
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#myButton').floatingWhatsApp({
+                phone: '5491133359850',
+                popupMessage: 'Hello, how can we help you?',
+                message: "I'd like to order a product",
+                showPopup: true,
+                showOnIE: true,
+                headerTitle: 'Welcome!',
+                headerColor: '#25d366',
+                backgroundColor: '#25d366',
+                buttonImage: '<img src="../static/images/whatsapp.svg" />'
+            });
+        });
     </script>
 
 </body>

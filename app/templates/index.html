@@ -313,6 +313,7 @@
     {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
     {% for category, message in messages %}
+
     <label>
         <input type="checkbox" class="alertCheckbox" autocomplete="off" />
         <div class="alert {{category}}">
@@ -882,7 +883,7 @@
                 </div>
             </div>
         </div>
-        <div id="myButton"></div>
+
         <div class="section-indent">
             <div class="container">
                 <div class="section-title max-width-01">
@@ -1021,7 +1022,7 @@
                 </div>
             </div>
         </div>
-
+        <div id="myButton"></div>
         <div class="section-indent">
             <div class="container container-md-fluid">
                 <div class="row">
@@ -1184,6 +1185,7 @@
                 </div>
 
                 <div id="map"></div>
+
                 <div class="f-copyright row no-gutters">
                     <div class="col-sm-auto">&copy; 2022 Electrical Services. All Rights Reserved.</div>
                     <div class="col-sm-auto ml-sm-auto" id="google_translate_element"></div>
@@ -1260,9 +1262,7 @@
             </div>
         </div>
 
-    </div>
-
-    <a href="#" id="js-backtotop" class="tt-back-to-top"><i class="fa-solid fa-bolt"
+    </div><a href="#" id="js-backtotop" class="tt-back-to-top"><i class="fa-solid fa-bolt"
             style=" padding-right: 0.1cm;"></i></a>
 
     <script>
@@ -1289,14 +1289,13 @@
             $('#myButton').floatingWhatsApp({
                 phone: '5491133359850',
                 popupMessage: 'Hello, how can we help you?',
-                message: "I'd like to order a pizza",
+                message: "I'd like to order a product",
                 showPopup: true,
                 showOnIE: true,
                 headerTitle: 'Welcome!',
                 headerColor: '#25d366',
                 backgroundColor: '#25d366',
-                zindex: -1,
-                buttonImage: '<img src="../static/images/whatsapp_733585.png" />'
+                buttonImage: '<img src="../static/images/whatsapp.svg" />'
             });
         });
     </script>
