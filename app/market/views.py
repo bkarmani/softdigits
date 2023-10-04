@@ -8,8 +8,11 @@ from ..emails import send_email
 import random
 import os
 
+static_dir = os.path.abspath(os.path.dirname('app\static'))
 
 # produce unique random numbers as order number
+
+
 def order_sn():
     start = str(random.randrange(1, 100, 2))
     middle = str(random.randint(1, 20))
@@ -57,10 +60,11 @@ def add_product():
         db.session.add(product)
         db.session.commit()
 
-        img1.save(os.path.join('app\static\images\product', file1_name))
-        img2.save(os.path.join('app\static\images\product', file2_name))
-        img3.save(os.path.join('app\static\images\product', file3_name))
-        img4.save(os.path.join('app\static\images\product', file4_name))
+        # save files to static
+        img1.save(os.path.join(static_dir, 'static\images\product', file1_name))
+        img2.save(os.path.join(static_dir, 'static\images\product', file2_name))
+        img3.save(os.path.join(static_dir, 'static\images\product', file3_name))
+        img4.save(os.path.join(static_dir, 'static\images\product', file4_name))
 
         return redirect(url_for('shop.add_product'))
     return render_template('shop/add_product.html', form=form)
