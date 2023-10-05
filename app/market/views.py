@@ -61,13 +61,13 @@ def add_product():
 
         # save files to static
         img1.save(os.path.join(
-            '\home\web\website\app\static\images\product', file1_name))
+            '/home/web/website/app/static/images/product', file1_name))
         img2.save(os.path.join(
-            '\home\web\website\app\static\images\product', file2_name))
+            '/home/web/website/app/static/images/product', file2_name))
         img3.save(os.path.join(
-            '\home\web\website\app\static\images\product', file3_name))
+            '/home/web/website/app/static/images/product', file3_name))
         img4.save(os.path.join(
-            '\home\web\website\app\static\images\product', file4_name))
+            '/home/web/website/app/static/images/product', file4_name))
 
         return redirect(url_for('shop.add_product'))
     return render_template('shop/add_product.html', form=form)
