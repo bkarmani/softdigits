@@ -1589,7 +1589,7 @@ html.ie.gecko body.modal-open {
     color: #bbbdc3;
     margin-top: 200px;
     width: 100%;
-  
+
 }
 
 form {
@@ -1800,6 +1800,7 @@ form {
     from {
         opacity: 0
     }
+
     to {
         opacity: 1
     }
@@ -1809,6 +1810,7 @@ form {
     from {
         opacity: 0
     }
+
     to {
         opacity: 1
     }
@@ -1819,78 +1821,97 @@ form {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     95% {
         -webkit-transform: translate(-.2px, -.05px);
         transform: translate(-.2px, -.05px)
     }
+
     90% {
         -webkit-transform: translate(.1px, -.3px);
         transform: translate(.1px, -.3px)
     }
+
     85% {
         -webkit-transform: translate(.9px, .3px);
         transform: translate(.9px, .3px)
     }
+
     80% {
         -webkit-transform: translate(1.2px, .2px);
         transform: translate(1.2px, .2px)
     }
+
     75% {
         -webkit-transform: translate(.5px, -.75px);
         transform: translate(.5px, -.75px)
     }
+
     70% {
         -webkit-transform: translate(.9px, .9px);
         transform: translate(.9px, .9px)
     }
+
     65% {
         -webkit-transform: translate(1.75px, 1.4px);
         transform: translate(1.75px, 1.4px)
     }
+
     60% {
         -webkit-transform: translate(2.6px, .8px);
         transform: translate(2.6px, .8px)
     }
+
     55% {
         -webkit-transform: translate(0, .45px);
         transform: translate(0, .45px)
     }
+
     50% {
         -webkit-transform: translate(-.5px, 2px);
         transform: translate(-.5px, 2px)
     }
+
     45% {
         -webkit-transform: translate(-.55px, -1.1px);
         transform: translate(-.55px, -1.1px)
     }
+
     40% {
         -webkit-transform: translate(0, -1.8px);
         transform: translate(0, -1.8px)
     }
+
     35% {
         -webkit-transform: translate(-1.95px, .65px);
         transform: translate(-1.95px, .65px)
     }
+
     30% {
         -webkit-transform: translate(-2.8px, 2.1px);
         transform: translate(-2.8px, 2.1px)
     }
+
     25% {
         -webkit-transform: translate(-3.5px, 3px);
         transform: translate(-3.5px, 3px)
     }
+
     20% {
         -webkit-transform: translate(3.6px, 2.4px);
         transform: translate(3.6px, 2.4px)
     }
+
     15% {
         -webkit-transform: translate(-4.65px, .85px);
         transform: translate(-4.65px, .85px)
     }
+
     10% {
         -webkit-transform: translate(-.9px, 2.7px);
         transform: translate(-.9px, 2.7px)
     }
+
     5% {
         -webkit-transform: translate(-.95px, -.95px);
         transform: translate(-.95px, -.95px)
@@ -1902,78 +1923,97 @@ form {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     95% {
         -webkit-transform: translate(-.2px, -.05px);
         transform: translate(-.2px, -.05px)
     }
+
     90% {
         -webkit-transform: translate(.1px, -.3px);
         transform: translate(.1px, -.3px)
     }
+
     85% {
         -webkit-transform: translate(.9px, .3px);
         transform: translate(.9px, .3px)
     }
+
     80% {
         -webkit-transform: translate(1.2px, .2px);
         transform: translate(1.2px, .2px)
     }
+
     75% {
         -webkit-transform: translate(.5px, -.75px);
         transform: translate(.5px, -.75px)
     }
+
     70% {
         -webkit-transform: translate(.9px, .9px);
         transform: translate(.9px, .9px)
     }
+
     65% {
         -webkit-transform: translate(1.75px, 1.4px);
         transform: translate(1.75px, 1.4px)
     }
+
     60% {
         -webkit-transform: translate(2.6px, .8px);
         transform: translate(2.6px, .8px)
     }
+
     55% {
         -webkit-transform: translate(0, .45px);
         transform: translate(0, .45px)
     }
+
     50% {
         -webkit-transform: translate(-.5px, 2px);
         transform: translate(-.5px, 2px)
     }
+
     45% {
         -webkit-transform: translate(-.55px, -1.1px);
         transform: translate(-.55px, -1.1px)
     }
+
     40% {
         -webkit-transform: translate(0, -1.8px);
         transform: translate(0, -1.8px)
     }
+
     35% {
         -webkit-transform: translate(-1.95px, .65px);
         transform: translate(-1.95px, .65px)
     }
+
     30% {
         -webkit-transform: translate(-2.8px, 2.1px);
         transform: translate(-2.8px, 2.1px)
     }
+
     25% {
         -webkit-transform: translate(-3.5px, 3px);
         transform: translate(-3.5px, 3px)
     }
+
     20% {
         -webkit-transform: translate(3.6px, 2.4px);
         transform: translate(3.6px, 2.4px)
     }
+
     15% {
         -webkit-transform: translate(-4.65px, .85px);
         transform: translate(-4.65px, .85px)
     }
+
     10% {
         -webkit-transform: translate(-.9px, 2.7px);
         transform: translate(-.9px, 2.7px)
     }
+
     5% {
         -webkit-transform: translate(-.95px, -.95px);
         transform: translate(-.95px, -.95px)
@@ -1985,78 +2025,97 @@ form {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     95% {
         -webkit-transform: translate(.175px, -.1px);
         transform: translate(.175px, -.1px)
     }
+
     90% {
         -webkit-transform: translate(-.65px, 0);
         transform: translate(-.65px, 0)
     }
+
     85% {
         -webkit-transform: translate(.375px, 0);
         transform: translate(.375px, 0)
     }
+
     80% {
         -webkit-transform: translate(-1.7px, -.4px);
         transform: translate(-1.7px, -.4px)
     }
+
     75% {
         -webkit-transform: translate(-.875px, -.25px);
         transform: translate(-.875px, -.25px)
     }
+
     70% {
         -webkit-transform: translate(-1.05px, -.3px);
         transform: translate(-1.05px, -.3px)
     }
+
     65% {
         -webkit-transform: translate(3.675px, 0);
         transform: translate(3.675px, 0)
     }
+
     60% {
         -webkit-transform: translate(1.4px, 0);
         transform: translate(1.4px, 0)
     }
+
     55% {
         -webkit-transform: translate(4.725px, 1.8px);
         transform: translate(4.725px, 1.8px)
     }
+
     50% {
         -webkit-transform: translate(-2.75px, .5px);
         transform: translate(-2.75px, .5px)
     }
+
     45% {
         -webkit-transform: translate(-4.675px, -1.65px);
         transform: translate(-4.675px, -1.65px)
     }
+
     40% {
         -webkit-transform: translate(-.3px, -.6px);
         transform: translate(-.3px, -.6px)
     }
+
     35% {
         -webkit-transform: translate(-6.175px, -1.95px);
         transform: translate(-6.175px, -1.95px)
     }
+
     30% {
         -webkit-transform: translate(3.85px, 2.1px);
         transform: translate(3.85px, 2.1px)
     }
+
     25% {
         -webkit-transform: translate(-6.375px, -2.25px);
         transform: translate(-6.375px, -2.25px)
     }
+
     20% {
         -webkit-transform: translate(7.6px, -2.4px);
         transform: translate(7.6px, -2.4px)
     }
+
     15% {
         -webkit-transform: translate(8.075px, 0);
         transform: translate(8.075px, 0)
     }
+
     10% {
         -webkit-transform: translate(-4.95px, 0);
         transform: translate(-4.95px, 0)
     }
+
     5% {
         -webkit-transform: translate(8.075px, .95px);
         transform: translate(8.075px, .95px)
@@ -2068,78 +2127,97 @@ form {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     95% {
         -webkit-transform: translate(.175px, -.1px);
         transform: translate(.175px, -.1px)
     }
+
     90% {
         -webkit-transform: translate(-.65px, 0);
         transform: translate(-.65px, 0)
     }
+
     85% {
         -webkit-transform: translate(.375px, 0);
         transform: translate(.375px, 0)
     }
+
     80% {
         -webkit-transform: translate(-1.7px, -.4px);
         transform: translate(-1.7px, -.4px)
     }
+
     75% {
         -webkit-transform: translate(-.875px, -.25px);
         transform: translate(-.875px, -.25px)
     }
+
     70% {
         -webkit-transform: translate(-1.05px, -.3px);
         transform: translate(-1.05px, -.3px)
     }
+
     65% {
         -webkit-transform: translate(3.675px, 0);
         transform: translate(3.675px, 0)
     }
+
     60% {
         -webkit-transform: translate(1.4px, 0);
         transform: translate(1.4px, 0)
     }
+
     55% {
         -webkit-transform: translate(4.725px, 1.8px);
         transform: translate(4.725px, 1.8px)
     }
+
     50% {
         -webkit-transform: translate(-2.75px, .5px);
         transform: translate(-2.75px, .5px)
     }
+
     45% {
         -webkit-transform: translate(-4.675px, -1.65px);
         transform: translate(-4.675px, -1.65px)
     }
+
     40% {
         -webkit-transform: translate(-.3px, -.6px);
         transform: translate(-.3px, -.6px)
     }
+
     35% {
         -webkit-transform: translate(-6.175px, -1.95px);
         transform: translate(-6.175px, -1.95px)
     }
+
     30% {
         -webkit-transform: translate(3.85px, 2.1px);
         transform: translate(3.85px, 2.1px)
     }
+
     25% {
         -webkit-transform: translate(-6.375px, -2.25px);
         transform: translate(-6.375px, -2.25px)
     }
+
     20% {
         -webkit-transform: translate(7.6px, -2.4px);
         transform: translate(7.6px, -2.4px)
     }
+
     15% {
         -webkit-transform: translate(8.075px, 0);
         transform: translate(8.075px, 0)
     }
+
     10% {
         -webkit-transform: translate(-4.95px, 0);
         transform: translate(-4.95px, 0)
     }
+
     5% {
         -webkit-transform: translate(8.075px, .95px);
         transform: translate(8.075px, .95px)
@@ -2151,78 +2229,97 @@ form {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     95% {
         -webkit-transform: translate(-.35px, 0);
         transform: translate(-.35px, 0)
     }
+
     90% {
         -webkit-transform: translate(.3px, 0);
         transform: translate(.3px, 0)
     }
+
     85% {
         -webkit-transform: translate(1.35px, -.3px);
         transform: translate(1.35px, -.3px)
     }
+
     80% {
         -webkit-transform: translate(.8px, .8px);
         transform: translate(.8px, .8px)
     }
+
     75% {
         -webkit-transform: translate(1.75px, -.5px);
         transform: translate(1.75px, -.5px)
     }
+
     70% {
         -webkit-transform: translate(1.5px, .6px);
         transform: translate(1.5px, .6px)
     }
+
     65% {
         -webkit-transform: translate(-3.15px, .35px);
         transform: translate(-3.15px, .35px)
     }
+
     60% {
         -webkit-transform: translate(3.6px, 1.6px);
         transform: translate(3.6px, 1.6px)
     }
+
     55% {
         -webkit-transform: translate(-4.05px, 1.8px);
         transform: translate(-4.05px, 1.8px)
     }
+
     50% {
         -webkit-transform: translate(1.5px, 0);
         transform: translate(1.5px, 0)
     }
+
     45% {
         -webkit-transform: translate(-5.5px, -1.65px);
         transform: translate(-5.5px, -1.65px)
     }
+
     40% {
         -webkit-transform: translate(4.2px, 2.4px);
         transform: translate(4.2px, 2.4px)
     }
+
     35% {
         -webkit-transform: translate(.65px, -.65px);
         transform: translate(.65px, -.65px)
     }
+
     30% {
         -webkit-transform: translate(-7px, -1.4px);
         transform: translate(-7px, -1.4px)
     }
+
     25% {
         -webkit-transform: translate(-6.65px, -.75px);
         transform: translate(-6.65px, -.75px)
     }
+
     20% {
         -webkit-transform: translate(-2.4px, .8px);
         transform: translate(-2.4px, .8px)
     }
+
     15% {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     10% {
         -webkit-transform: translate(4.5px, 2.7px);
         transform: translate(4.5px, 2.7px)
     }
+
     5% {
         -webkit-transform: translate(-6.65px, 2.85px);
         transform: translate(-6.65px, 2.85px)
@@ -2234,78 +2331,97 @@ form {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     95% {
         -webkit-transform: translate(-.35px, 0);
         transform: translate(-.35px, 0)
     }
+
     90% {
         -webkit-transform: translate(.3px, 0);
         transform: translate(.3px, 0)
     }
+
     85% {
         -webkit-transform: translate(1.35px, -.3px);
         transform: translate(1.35px, -.3px)
     }
+
     80% {
         -webkit-transform: translate(.8px, .8px);
         transform: translate(.8px, .8px)
     }
+
     75% {
         -webkit-transform: translate(1.75px, -.5px);
         transform: translate(1.75px, -.5px)
     }
+
     70% {
         -webkit-transform: translate(1.5px, .6px);
         transform: translate(1.5px, .6px)
     }
+
     65% {
         -webkit-transform: translate(-3.15px, .35px);
         transform: translate(-3.15px, .35px)
     }
+
     60% {
         -webkit-transform: translate(3.6px, 1.6px);
         transform: translate(3.6px, 1.6px)
     }
+
     55% {
         -webkit-transform: translate(-4.05px, 1.8px);
         transform: translate(-4.05px, 1.8px)
     }
+
     50% {
         -webkit-transform: translate(1.5px, 0);
         transform: translate(1.5px, 0)
     }
+
     45% {
         -webkit-transform: translate(-5.5px, -1.65px);
         transform: translate(-5.5px, -1.65px)
     }
+
     40% {
         -webkit-transform: translate(4.2px, 2.4px);
         transform: translate(4.2px, 2.4px)
     }
+
     35% {
         -webkit-transform: translate(.65px, -.65px);
         transform: translate(.65px, -.65px)
     }
+
     30% {
         -webkit-transform: translate(-7px, -1.4px);
         transform: translate(-7px, -1.4px)
     }
+
     25% {
         -webkit-transform: translate(-6.65px, -.75px);
         transform: translate(-6.65px, -.75px)
     }
+
     20% {
         -webkit-transform: translate(-2.4px, .8px);
         transform: translate(-2.4px, .8px)
     }
+
     15% {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     10% {
         -webkit-transform: translate(4.5px, 2.7px);
         transform: translate(4.5px, 2.7px)
     }
+
     5% {
         -webkit-transform: translate(-6.65px, 2.85px);
         transform: translate(-6.65px, 2.85px)
@@ -2317,78 +2433,97 @@ form {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     95% {
         -webkit-transform: translate(.525px, -.15px);
         transform: translate(.525px, -.15px)
     }
+
     90% {
         -webkit-transform: translate(-.95px, -.2px);
         transform: translate(-.95px, -.2px)
     }
+
     85% {
         -webkit-transform: translate(.225px, -.45px);
         transform: translate(.225px, -.45px)
     }
+
     80% {
         -webkit-transform: translate(-1.3px, .8px);
         transform: translate(-1.3px, .8px)
     }
+
     75% {
         -webkit-transform: translate(-.875px, .5px);
         transform: translate(-.875px, .5px)
     }
+
     70% {
         -webkit-transform: translate(-2.25px, -.3px);
         transform: translate(-2.25px, -.3px)
     }
+
     65% {
         -webkit-transform: translate(2.625px, -.35px);
         transform: translate(2.625px, -.35px)
     }
+
     60% {
         -webkit-transform: translate(-1px, 0);
         transform: translate(-1px, 0)
     }
+
     55% {
         -webkit-transform: translate(1.575px, 1.8px);
         transform: translate(1.575px, 1.8px)
     }
+
     50% {
         -webkit-transform: translate(-3.75px, -1px);
         transform: translate(-3.75px, -1px)
     }
+
     45% {
         -webkit-transform: translate(5.325px, .55px);
         transform: translate(5.325px, .55px)
     }
+
     40% {
         -webkit-transform: translate(.3px, 2.4px);
         transform: translate(.3px, 2.4px)
     }
+
     35% {
         -webkit-transform: translate(2.275px, 0);
         transform: translate(2.275px, 0)
     }
+
     30% {
         -webkit-transform: translate(2.45px, -.7px);
         transform: translate(2.45px, -.7px)
     }
+
     25% {
         -webkit-transform: translate(1.125px, .75px);
         transform: translate(1.125px, .75px)
     }
+
     20% {
         -webkit-transform: translate(-4.4px, 3.2px);
         transform: translate(-4.4px, 3.2px)
     }
+
     15% {
         -webkit-transform: translate(4.075px, 2.55px);
         transform: translate(4.075px, 2.55px)
     }
+
     10% {
         -webkit-transform: translate(1.35px, -1.8px);
         transform: translate(1.35px, -1.8px)
     }
+
     5% {
         -webkit-transform: translate(4.275px, -1.9px);
         transform: translate(4.275px, -1.9px)
@@ -2400,78 +2535,97 @@ form {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     95% {
         -webkit-transform: translate(.525px, -.15px);
         transform: translate(.525px, -.15px)
     }
+
     90% {
         -webkit-transform: translate(-.95px, -.2px);
         transform: translate(-.95px, -.2px)
     }
+
     85% {
         -webkit-transform: translate(.225px, -.45px);
         transform: translate(.225px, -.45px)
     }
+
     80% {
         -webkit-transform: translate(-1.3px, .8px);
         transform: translate(-1.3px, .8px)
     }
+
     75% {
         -webkit-transform: translate(-.875px, .5px);
         transform: translate(-.875px, .5px)
     }
+
     70% {
         -webkit-transform: translate(-2.25px, -.3px);
         transform: translate(-2.25px, -.3px)
     }
+
     65% {
         -webkit-transform: translate(2.625px, -.35px);
         transform: translate(2.625px, -.35px)
     }
+
     60% {
         -webkit-transform: translate(-1px, 0);
         transform: translate(-1px, 0)
     }
+
     55% {
         -webkit-transform: translate(1.575px, 1.8px);
         transform: translate(1.575px, 1.8px)
     }
+
     50% {
         -webkit-transform: translate(-3.75px, -1px);
         transform: translate(-3.75px, -1px)
     }
+
     45% {
         -webkit-transform: translate(5.325px, .55px);
         transform: translate(5.325px, .55px)
     }
+
     40% {
         -webkit-transform: translate(.3px, 2.4px);
         transform: translate(.3px, 2.4px)
     }
+
     35% {
         -webkit-transform: translate(2.275px, 0);
         transform: translate(2.275px, 0)
     }
+
     30% {
         -webkit-transform: translate(2.45px, -.7px);
         transform: translate(2.45px, -.7px)
     }
+
     25% {
         -webkit-transform: translate(1.125px, .75px);
         transform: translate(1.125px, .75px)
     }
+
     20% {
         -webkit-transform: translate(-4.4px, 3.2px);
         transform: translate(-4.4px, 3.2px)
     }
+
     15% {
         -webkit-transform: translate(4.075px, 2.55px);
         transform: translate(4.075px, 2.55px)
     }
+
     10% {
         -webkit-transform: translate(1.35px, -1.8px);
         transform: translate(1.35px, -1.8px)
     }
+
     5% {
         -webkit-transform: translate(4.275px, -1.9px);
         transform: translate(4.275px, -1.9px)
@@ -2483,78 +2637,97 @@ form {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     95% {
         -webkit-transform: translate(-.2px, -.05px);
         transform: translate(-.2px, -.05px)
     }
+
     90% {
         -webkit-transform: translate(-.2px, -.2px);
         transform: translate(-.2px, -.2px)
     }
+
     85% {
         -webkit-transform: translate(1.8px, .6px);
         transform: translate(1.8px, .6px)
     }
+
     80% {
         -webkit-transform: translate(1.4px, .2px);
         transform: translate(1.4px, .2px)
     }
+
     75% {
         -webkit-transform: translate(-1px, 1px);
         transform: translate(-1px, 1px)
     }
+
     70% {
         -webkit-transform: translate(-3px, .6px);
         transform: translate(-3px, .6px)
     }
+
     65% {
         -webkit-transform: translate(-3.5px, 1.05px);
         transform: translate(-3.5px, 1.05px)
     }
+
     60% {
         -webkit-transform: translate(-2.8px, 1.6px);
         transform: translate(-2.8px, 1.6px)
     }
+
     55% {
         -webkit-transform: translate(1.35px, 1.35px);
         transform: translate(1.35px, 1.35px)
     }
+
     50% {
         -webkit-transform: translate(-2px, 1px);
         transform: translate(-2px, 1px)
     }
+
     45% {
         -webkit-transform: translate(-4.4px, 0);
         transform: translate(-4.4px, 0)
     }
+
     40% {
         -webkit-transform: translate(-3px, .6px);
         transform: translate(-3px, .6px)
     }
+
     35% {
         -webkit-transform: translate(-6.5px, 0);
         transform: translate(-6.5px, 0)
     }
+
     30% {
         -webkit-transform: translate(4.4px, -1.4px);
         transform: translate(4.4px, -1.4px)
     }
+
     25% {
         -webkit-transform: translate(6.65px, 0);
         transform: translate(6.65px, 0)
     }
+
     20% {
         -webkit-transform: translate(-4.8px, 2.4px);
         transform: translate(-4.8px, 2.4px)
     }
+
     15% {
         -webkit-transform: translate(3.8px, -2.55px);
         transform: translate(3.8px, -2.55px)
     }
+
     10% {
         -webkit-transform: translate(2.7px, 0);
         transform: translate(2.7px, 0)
     }
+
     5% {
         -webkit-transform: translate(-4.75px, 1.9px);
         transform: translate(-4.75px, 1.9px)
@@ -2566,78 +2739,97 @@ form {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+
     95% {
         -webkit-transform: translate(-.2px, -.05px);
         transform: translate(-.2px, -.05px)
     }
+
     90% {
         -webkit-transform: translate(-.2px, -.2px);
         transform: translate(-.2px, -.2px)
     }
+
     85% {
         -webkit-transform: translate(1.8px, .6px);
         transform: translate(1.8px, .6px)
     }
+
     80% {
         -webkit-transform: translate(1.4px, .2px);
         transform: translate(1.4px, .2px)
     }
+
     75% {
         -webkit-transform: translate(-1px, 1px);
         transform: translate(-1px, 1px)
     }
+
     70% {
         -webkit-transform: translate(-3px, .6px);
         transform: translate(-3px, .6px)
     }
+
     65% {
         -webkit-transform: translate(-3.5px, 1.05px);
         transform: translate(-3.5px, 1.05px)
     }
+
     60% {
         -webkit-transform: translate(-2.8px, 1.6px);
         transform: translate(-2.8px, 1.6px)
     }
+
     55% {
         -webkit-transform: translate(1.35px, 1.35px);
         transform: translate(1.35px, 1.35px)
     }
+
     50% {
         -webkit-transform: translate(-2px, 1px);
         transform: translate(-2px, 1px)
     }
+
     45% {
         -webkit-transform: translate(-4.4px, 0);
         transform: translate(-4.4px, 0)
     }
+
     40% {
         -webkit-transform: translate(-3px, .6px);
         transform: translate(-3px, .6px)
     }
+
     35% {
         -webkit-transform: translate(-6.5px, 0);
         transform: translate(-6.5px, 0)
     }
+
     30% {
         -webkit-transform: translate(4.4px, -1.4px);
         transform: translate(4.4px, -1.4px)
     }
+
     25% {
         -webkit-transform: translate(6.65px, 0);
         transform: translate(6.65px, 0)
     }
+
     20% {
         -webkit-transform: translate(-4.8px, 2.4px);
         transform: translate(-4.8px, 2.4px)
     }
+
     15% {
         -webkit-transform: translate(3.8px, -2.55px);
         transform: translate(3.8px, -2.55px)
     }
+
     10% {
         -webkit-transform: translate(2.7px, 0);
         transform: translate(2.7px, 0)
     }
+
     5% {
         -webkit-transform: translate(-4.75px, 1.9px);
         transform: translate(-4.75px, 1.9px)
@@ -2658,7 +2850,8 @@ form {
     .modal .modal-dialog {
         max-width: inherit
     }
-    #map {
+
+    #maps {
         position: absolute !important;
         top: 25px;
         right: 15px
@@ -2681,6 +2874,7 @@ form {
     .modal .modal-body {
         padding: 53px 56px 60px
     }
+
     .f-form {
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%)
@@ -2688,7 +2882,7 @@ form {
 }
 
 @media (min-width:1230px) {
-    #map {
+    #maps {
         width: 429px;
         height: 246px
     }
@@ -2706,12 +2900,14 @@ form {
         padding-left: 15px;
         padding-right: 15px
     }
-    #map {
+
+    #maps {
         height: 180px;
         width: calc(50% - 30px);
         max-width: calc(50% - 30px);
         right: 25px
     }
+
     .f-copyright {
         padding-left: 25px;
         padding-right: 25px
@@ -2722,29 +2918,36 @@ form {
     .modal .modal-body {
         padding: 43px 40px 50px
     }
+
     .modal .modal-body .modal-titleblock {
         padding-bottom: 32px
     }
+
     .modal .modal-body .modal-titleblock .modal-title {
         font-size: 32px;
         line-height: 42px
     }
+
     .f-holder {
         margin-top: 11px
     }
+
     .f-logo {
         font-size: 28px;
         line-height: 40px;
         margin-bottom: 10px
     }
+
     .f-logo .tt-icon {
         top: -4px;
         left: 7px;
         z-index: 1
     }
+
     .f-logo .tt-icon img {
         max-width: 21px
     }
+
     .f-info-icon li [class^=icon] {
         font-size: 14px
     }
@@ -2754,21 +2957,26 @@ form {
     #tt-footer {
         margin-top: 70px
     }
+
     .f-form {
         padding: 15px
     }
+
     .f-form .f-form__label {
         font-size: 20px;
         padding-right: 0
     }
+
     .f-form .f-form__input .form-control {
         height: 35px;
         font-size: 15px;
         padding: 6px 8px 6px 8px
     }
+
     .f-form .f-form__btn .tt-btn {
         height: 35px
     }
+
     .f-form .f-form__btn .tt-btn [class^=icon-] {
         margin-right: 10px
     }
@@ -2779,14 +2987,17 @@ form {
         -webkit-transform: scale(.75);
         transform: scale(.75)
     }
+
     .mfp-arrow-left {
         -webkit-transform-origin: 0;
         transform-origin: 0
     }
+
     .mfp-arrow-right {
         -webkit-transform-origin: 100%;
         transform-origin: 100%
     }
+
     .mfp-container {
         padding-left: 6px;
         padding-right: 6px
@@ -2799,17 +3010,21 @@ screen and (max-height:300px) {
         padding-left: 0;
         padding-right: 0
     }
+
     .mfp-img-mobile img.mfp-img {
         padding: 0
     }
+
     .mfp-img-mobile .mfp-figure:after {
         top: 0;
         bottom: 0
     }
+
     .mfp-img-mobile .mfp-figure small {
         display: inline;
         margin-left: 5px
     }
+
     .mfp-img-mobile .mfp-bottom-bar {
         background: rgba(0, 0, 0, .6);
         bottom: 0;
@@ -2819,13 +3034,16 @@ screen and (max-height:300px) {
         position: fixed;
         box-sizing: border-box
     }
+
     .mfp-img-mobile .mfp-bottom-bar:empty {
         padding: 0
     }
+
     .mfp-img-mobile .mfp-counter {
         right: 5px;
         top: 3px
     }
+
     .mfp-img-mobile .mfp-close {
         top: 0;
         right: 0;
@@ -2843,6 +3061,7 @@ screen and (max-height:300px) {
     .tt-back-to-top.pt-show {
         bottom: 50px
     }
+
     .tt-back-to-top {
         width: 66px;
         height: 66px
@@ -2853,30 +3072,38 @@ screen and (max-height:300px) {
     #tt-footer {
         margin-top: 58px
     }
+
     .f-form {
         flex-wrap: wrap;
         justify-content: flex-start;
         padding: 9px 15px 14px
     }
+
     .f-form>:not(:first-child) {
         margin-left: 0
     }
+
     .f-form .f-form__input {
         width: calc(100% - 128px)
     }
+
     .f-form .f-form__input .form-control {
         width: 100%
     }
+
     .f-form .f-form__label {
         width: 100%;
         padding-bottom: 6px
     }
+
     .f-form .f-form__btn {
         margin-left: 5px
     }
+
     .f-form .f-form__btn .tt-btn .tt-short-text {
         display: none
     }
+
     .f-info-text {
         padding-right: 0
     }
@@ -2892,12 +3119,15 @@ screen and (max-height:300px) {
     .modal-md {
         width: 420px
     }
+
     .modal .modal-body {
         padding: 43px 30px 40px
     }
+
     .modal .modal-body .modal-titleblock {
         padding-bottom: 20px
     }
+
     .modal .modal-body .modal-titleblock .modal-title {
         font-size: 24px;
         line-height: 30px
@@ -2911,7 +3141,8 @@ screen and (max-height:300px) {
         padding-right: 10px;
         margin-top: 0
     }
-    #map {
+
+    #maps {
         width: 100%;
         height: 246px;
         max-width: inherit;
@@ -2919,24 +3150,30 @@ screen and (max-height:300px) {
         margin-top: 35px;
         right: 0
     }
+
     .f-info-icon {
         margin-top: 34px
     }
+
     .f-nav {
         padding-left: 0;
         padding-right: 0;
         margin-top: 29px
     }
+
     .f-nav li {
         text-align: left;
         padding-right: 27px
     }
+
     .f-copyright {
         margin-top: 30px
     }
+
     .f-copyright>* {
         text-align: center
     }
+
     .f-copyright>:not(:first-child) {
         margin-top: 13px
     }
@@ -2952,9 +3189,11 @@ screen and (max-height:300px) {
     .additional-strut {
         min-height: 170px
     }
+
     .f-logo {
         width: 50%
     }
+
     .f-info-text {
         width: 50%
     }
