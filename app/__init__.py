@@ -7,8 +7,6 @@ from flask_moment import Moment
 from flask_login import LoginManager
 
 
-
-
 db = SQLAlchemy()
 bootstrap = Bootstrap()
 email = Mail()
@@ -16,12 +14,10 @@ time = Moment()
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
 
+
 def create_app(config_name):
     app = Flask(__name__)
     app.config.from_object(config[config_name])
-    
-    
-    
 
     config[config_name].init_app(app)
     db.init_app(app)
@@ -29,16 +25,11 @@ def create_app(config_name):
     email.init_app(app)
     login_manager.init_app(app)
 
-
-    #blueprpints
+    # blueprpints
     from .main import main as main_blueprint
-    from .market import shop as shop_bp
     from .auth import auth as auth_bp
 
     app.register_blueprint(main_blueprint)
-    app.register_blueprint(shop_bp, url_prefix='/shop')
     app.register_blueprint(auth_bp, url_prefix='/auth')
 
     return app
-
-
